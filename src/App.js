@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import CreateTodo from './components/todos/CreateTodo'
-import TodosContainer from './components/todos/TodosContainer'
+import TodosContainer from './components/todos/TodosContainer';
+
 
 class App extends Component {
+  
   render() {
+    console.log("App.js",this.props)
     return (
       <div className="App">
         <CreateTodo />
-        <TodosContainer />
+        <TodosContainer/>
       </div>
     );
   }
